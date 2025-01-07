@@ -21,7 +21,7 @@ export default function Home() {
       setCategories(parsedCategories);
       setError('');
     } catch (err) {
-      setError('Invalid JSON format. Please check your input.');
+      setError('Invalid JSON format. Please check your input.' + err);
     }
   };
 
